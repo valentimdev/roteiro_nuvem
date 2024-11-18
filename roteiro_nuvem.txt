@@ -1,0 +1,46 @@
+BACK:
+
+sudo su
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install --lts
+node -v
+sudo yum install git -y
+git --version
+git clone https://github.com/oJohn1512/BackTrabalhoNuvem.git
+cd BackTrabalhoNuvem
+sudo su
+npm init
+enter varias vezes
+sudo su
+npm install express --save
+node app.js 
+
+FRONT:
+
+
+sudo su
+
+sudo yum install httpd
+
+y
+
+sudo systemctl start httpd
+
+sudo yum install git -y
+
+git --version
+
+git clone https://github.com/valentimdev/front_av3_nuvem
+
+cd front_av3_nuvem
+
+cd /var/www/html
+
+cp -r /home/ec2-user/front_av3_nuvem/* /var/www/html/
+
+nano app.js
+
+dentro do codigo alterar o apiURL pra  'http://<IP_GERADO_PELO_BACK>:3000
+
+cntrl s
